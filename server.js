@@ -1,13 +1,13 @@
 //server.js
 //2016 bretth18
 
-var express = require('express');
-var app = express();
-var path = require('path');
+var express = require('express'),
+    path = require('path'),
+    app = express();
 
-// viewed at http://localhost:8080
-app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/index.html'));
+app.set('port', 3000);
+app.use(express.static(path.join(__dirname, '/public')));
+
+app.listen(app.get('port'), function () {
+    console.log("Express server listening on port %s.", app.get('port'));
 });
-
-app.listen(8080);
