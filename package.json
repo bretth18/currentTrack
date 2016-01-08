@@ -1,0 +1,22 @@
+{
+	"name": "currenttrack",
+	"version": "0.0.1",
+	"description": "displaysmyfuckingcurrenttrack",
+	"keywords": [
+		"last.fm"
+	],
+	"license": "MIT",
+	"author": "brett henderson",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node server.js"
+	},
+	"dependencies": {
+		"connect": "3.4.0",
+		"serve-static": "1.10.0"
+	},
+	"engines": {
+		"node": "0.12.2"
+	}
+}
