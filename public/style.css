@@ -67,3 +67,8 @@ img.cover:hover {
   margin-top: 5px;
   color: #cdcdcd;
 }
+.footer {
+  font-family:inherit;
+  font-size: 10px;
+  margin-left: 10px;
+}
